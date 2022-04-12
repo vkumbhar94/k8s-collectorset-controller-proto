@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "github.com/logicmonitor/k8s-collectorset-controller-proto/api";
+
+package api;
+
+// The CollectorSetController collectorset service definition.
+service CollectorSetController {
+  // Retrieves a collector ID.
+  rpc CollectorID(CollectorIDRequest) returns (CollectorIDReply) {}
+}
+
+// The CollectorIDRequest message for a collector ID.
+message CollectorIDRequest {
+  string orchestrator = 2;
+}
+
+// The CollectorIDReply response message from a collector ID request.
+message CollectorIDReply {
+  int32 id = 1;
+}

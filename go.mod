@@ -1,4 +1,4 @@
-module github.com/logicmonitor/k8s-collectorset-controller-proto
+module github.com/vkumbhar94/k8s-collectorset-controller-proto
 
 go 1.18
 

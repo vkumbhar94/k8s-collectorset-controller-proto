@@ -1,4 +1,4 @@
-NAMESPACE  := logicmonitor
+NAMESPACE  := vkumbhar94
 REPOSITORY := collectorset-controller-proto
 VERSION    := 1.0.0
 

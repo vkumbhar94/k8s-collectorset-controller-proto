@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/logicmonitor/k8s-collectorset-controller-proto/api";
+option go_package = "github.com/vkumbhar94/k8s-collectorset-controller-proto/api";
 
 package api;
 

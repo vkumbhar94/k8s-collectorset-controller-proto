@@ -8,6 +8,7 @@ package api;
 service CollectorSetController {
   // Retrieves a collector ID.
   rpc CollectorID(CollectorIDRequest) returns (CollectorIDReply) {}
+  rpc CollectorSetControllerVersion(CollectorIDRequest) returns (CollectorIDReply) {}
 }
 
 // The CollectorIDRequest message for a collector ID.
@@ -18,4 +19,5 @@ message CollectorIDRequest {
 // The CollectorIDReply response message from a collector ID request.
 message CollectorIDReply {
   int32 id = 1;
+  string cscVersion =2;
 }

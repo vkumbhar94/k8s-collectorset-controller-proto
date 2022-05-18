@@ -1,5 +1,5 @@
 FROM golang:1.18
-WORKDIR $GOPATH/src/github.com/vkumbhar94/k8s-collectorset-controller-proto
+WORKDIR $GOPATH/src/github.com/shubhashri12/k8s-collectorset-controller-proto
 RUN apt-get update
 RUN apt-get -y install --no-install-recommends libarchive-tools
 RUN go install github.com/golang/protobuf/protoc-gen-go@v1.5.2
@@ -9,4 +9,4 @@ COPY ./proto ./proto
 RUN mkdir api
 RUN protoc -I proto proto/api.proto \
   --go_out=plugins=grpc:api --go_opt=paths=source_relative
-RUN cp $GOPATH/src/github.com/vkumbhar94/k8s-collectorset-controller-proto/api/api.pb.go /tmp/
+RUN cp $GOPATH/src/github.com/shubhashri12/k8s-collectorset-controller-proto/api/api.pb.go /tmp/

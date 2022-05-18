@@ -1,4 +1,4 @@
-NAMESPACE  := vkumbhar94
+NAMESPACE  := shubhashri12
 REPOSITORY := collectorset-controller-proto
 VERSION    := 1.0.0
 
